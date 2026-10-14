@@ -37,7 +37,7 @@ export const projects = [
     live: "https://nmeme.vercel.app/", github: "https://github.com/KaranBhavsar-1/Nmeme-React",
   },
   {
-    id: "blocknote", name: "BlockNote", subtitle: "Notion-like Notes App",
+    id: "blocknote", name: "BlockNote", planned: true,subtitle: "Notion-like Notes App",
     cats: ["Web Apps", "React"], tags: ["React", "Tailwind CSS", "Vite"],
     allTags: ["React", "Tailwind CSS", "Vite"],
     desc: "A block-based notes app inspired by Notion with a clean editing experience.",
