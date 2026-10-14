@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default theme */
+:root,
+[data-theme="midnight"] {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --line: #334155;
+  --ink: #f8fafc;
+  --brand: #4f46e5;
+  --brand2: #818cf8;
+  --headtext: #fefefe;
+}
+
+[data-theme="daylight"] {
+  --bg: #dce1e8;
+  --card: #e7ebf0;
+  --line: #000000;
+  --ink: #263244;
+  --brand: #4f46e5;
+  --brand2: #4338ca;
+  --headtext: #000000;
+
+}
+
+/* Mint theme — deep green */
+[data-theme="mint"] {
+  --bg: #102a26;
+  --card: #193b33;
+  --line: #2d5a4d;
+  --ink: #d1fae5;
+  --brand: #059669;
+  --brand2: #6ee7b7;
+  --headtext: #fefefe;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  @apply font-sans antialiased;
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+section {
+  scroll-margin-top: 72px;
+}
+
+/* Make theme transitions smooth */
+header,
+article,
+section,
+footer {
+  transition: background-color 300ms ease, border-color 300ms ease;
+}
