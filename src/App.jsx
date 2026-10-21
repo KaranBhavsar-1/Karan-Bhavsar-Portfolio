@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaHome,FaPaste,FaUser,FaProjectDiagram,FaGithub,FaLinkedin,FaEnvelope,FaPhoneAlt,FaMapMarkerAlt,FaGraduationCap,FaCode,FaServer,FaTools,FaHeart,FaBars,FaTimes,FaMoon,FaDownload,FaArrowLeft,FaCheckCircle,FaExternalLinkAlt,FaPaperPlane} from "react-icons/fa";
 import { links,navItems,skills,filters,projects,experience,education} from "./data";
 import { PiStudentBold } from "react-icons/pi";
+import { Analytics } from '@vercel/analytics/react';
 
 const skillIcons = [FaCode, FaServer, FaCode, FaTools, FaHeart];
 const container = "mx-auto w-full max-w-6xl px-5 sm:px-8";
@@ -706,6 +707,7 @@ export default function App() {
       )}
       <Contact />
       <Footer />
+      <Analytics />
     </div>
   );
 }
